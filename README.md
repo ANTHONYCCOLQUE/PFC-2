@@ -15,3 +15,19 @@ Para empezar, necesitas instalar los siguientes paquetes:
 pip install -qU langchain
 pip install -qU huggingface_hub
 pip install -qU openai
+
+
+
+## Configuración
+
+### **Hugging Face**
+
+Para utilizar los modelos de Hugging Face, necesitarás configurar tu token de API.
+
+1. Crea una cuenta en [Hugging Face](https://huggingface.co/).
+2. Entra en tu perfil, selecciona **Settings** > **Access Tokens** > **New Token**.
+3. Copia el token generado y pégalo en tu código como se muestra a continuación:
+
+```python
+import os
+os.environ['HUGGINGFACEHUB_API_TOKEN'] = 'HF_API_KEY'  # Reemplaza con tu token
