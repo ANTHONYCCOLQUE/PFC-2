@@ -20,3 +20,37 @@ Para poder ejecutar este proyecto, necesitas instalar las siguientes librerías 
 - **openpyxl**: Para leer y escribir archivos Excel.
   
 ``pip install langchain langchain_openai langchain_experimental pandas numpy tabulate openpyxl -q``
+
+## Uso
+El código principal se encuentra en el archivo LanghChain_con_Excel.ipynb. A continuación, se proporciona un ejemplo básico de cómo usar el proyecto.
+
+### Codigo de ejemplo
+Importa las librerías necesarias:
+
+![](https://github.com/ANTHONYCCOLQUE/t44/blob/main/librerias.png)
+
+
+Carga el archivo Excel con los datos del Titanic:
+
+``df = pd.read_excel("titanic.xlsx")
+  df.head()``
+  
+![](https://github.com/ANTHONYCCOLQUE/t44/blob/main/df.png)
+
+
+
+Crea un agente que interactúe con el dataframe:
+
+![](https://github.com/ANTHONYCCOLQUE/t44/blob/main/agente.png)
+
+
+Realiza una consulta al agente para obtener información sobre los datos:
+
+![](https://github.com/ANTHONYCCOLQUE/t44/blob/main/result.png)
+
+Este código cargará los datos del Titanic desde un archivo Excel y creará un agente que puede hacer preguntas sobre esos datos.
+###Ejemplos de preguntas que el agente puede responder:
+- ¿Cuántos pasajeros sobrevivieron en el Titanic?
+- ¿Cuál es la edad promedio de los pasajeros?
+- ¿Cuántos pasajeros pagaron más de una cierta tarifa?
+- ¿Cuántos hombres y cuántas mujeres había a bordo?
