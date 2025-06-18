@@ -18,4 +18,5 @@ Para poder ejecutar este proyecto, necesitas instalar las siguientes librerías 
 - **numpy**: Librería para operaciones matemáticas.
 - **tabulate**: Herramienta para mostrar tablas de manera legible.
 - **openpyxl**: Para leer y escribir archivos Excel.
+  
 ``pip install langchain langchain_openai langchain_experimental pandas numpy tabulate openpyxl -q``
